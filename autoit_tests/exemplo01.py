@@ -14,7 +14,12 @@ autoit.win_wait_active(title="Calculadora")
 # send commands for window active.
 autoit.send("3")
 autoit.send("*")
-autoit.send("5")
+autoit.send("10")
+autoit.send("=")
+sleep(2)
+# Click by Advanced (Class):	[CLASS:Button; INSTANCE:20]
+autoit.control_click("Calculadora","[CLASS:Button; INSTANCE:20]")
+autoit.send("2")
 autoit.send("=")
 sleep(2)
 text = autoit.win_get_text(title="Calculadora")
