@@ -11,7 +11,7 @@ autoit.run(filename="calc.exe")
 # Wait open Application.
 autoit.win_wait_active(title="Calculadora")
 
-# send commands.
+# send commands for window active.
 autoit.send("3")
 autoit.send("*")
 autoit.send("5")
