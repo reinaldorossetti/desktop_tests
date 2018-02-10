@@ -14,3 +14,6 @@ print(text)
 
 assert "15" in text
 expect(text).to(contain("15"))
+
+# close window by send command.
+autoit.send("!{F4}")
