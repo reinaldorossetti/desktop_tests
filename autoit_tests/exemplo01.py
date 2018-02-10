@@ -25,3 +25,6 @@ expect(text).to(contain("15"))
 
 # close window by send command Alt+F4.
 autoit.send("!{F4}")
+
+# close by autoit
+# autoit.win_close(title="Calculadora")
