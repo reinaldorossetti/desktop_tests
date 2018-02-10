@@ -9,7 +9,7 @@ autoit.send("*")
 autoit.send("5")
 autoit.send("=")
 sleep(2)
-text = autoit.win_get_text("Calculadora")
+text = autoit.win_get_text(title="Calculadora")
 print(text)
 
 assert "15" in text
