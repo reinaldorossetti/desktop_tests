@@ -2,8 +2,16 @@ import autoit
 from time import sleep
 from expects import *
 
+# Install AutoIt.
+# pip install -U pyautoit
+
+# Run Application.
 autoit.run(filename="calc.exe")
+
+# Wait open Application.
 autoit.win_wait_active(title="Calculadora")
+
+# send commands.
 autoit.send("3")
 autoit.send("*")
 autoit.send("5")
