@@ -53,7 +53,6 @@ except:
 sleep(3)
 autoit.win_wait_active(title=new_title)
 result = autoit.win_get_title(title=new_title)
-result = autoit.win_activate
 print(result)
 expect(result).to(contain(new_title))
 autoit.win_close(title=new_title)
